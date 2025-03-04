@@ -6,4 +6,16 @@
 */
 
 // your code
-let factorial
+let factorial = 1;
+
+let startNumber = 1;
+
+const finishNumber = 10;
+
+while (startNumber <= 10) {
+  factorial *= startNumber;
+  startNumber++;
+}
+
+console.log(factorial);
+
