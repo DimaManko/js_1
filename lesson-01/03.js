@@ -5,4 +5,16 @@
 */
 
 // your code
-let sum
+let sum = 0;
+
+let startSum = 1;
+
+const finish = 20;
+
+while (startSum < 20) {
+  if (startSum % 2 !== 0) {
+    sum = sum + startSum;
+  }
+  startSum++
+}
+console.log(sum);
