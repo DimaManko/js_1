@@ -10,15 +10,15 @@ let grade
 
 if (score >= 0 && score <= 100) {
     if (score >= 0 && score <= 49) {
-        console.log("F");
+        console.log('F');
     } else if (score >= 50 && score <= 69) {
-        console.log("D");
+        console.log('D');
     } else if (score >= 70 && score <= 79) {
-        console.log("C");
+        console.log('C');
     } else if (score >= 80 && score <= 89) {
-        console.log("B");
+        console.log('B');
     } else {
-        console.log("A");
+        console.log('A');
     }
         
     } else {
