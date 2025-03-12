@@ -21,7 +21,8 @@ if ((dice1 === dice2) && dice1 > 3 && dice2 > 3) {
   isWinningDouble = true;
 } else {
   console.log('Не выигрышный дубль.')
-  isWinningDouble = true;
 }
+dice1 = Math.ceil(Math.random() * 6);
+dice2 = Math.ceil(Math.random() * 6);
 }
 
