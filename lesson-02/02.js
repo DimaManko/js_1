@@ -9,19 +9,19 @@
 
 let dice1 = Math.ceil(Math.random() * 6); // your code
 let dice2 = Math.ceil(Math.random() * 6);// your code
-let isWinningDouble = true; // your code
+let isWinningDouble = false; // your code
 
 
 
-while (isWinningDouble) {
+while (!isWinningDouble) {
   console.log('Первый бросок: ' + dice1)
   console.log('Второй бросок: ' + dice2)
 if ((dice1 === dice2) && dice1 > 3 && dice2 > 3) {
   console.log('Выигрышный дубль!')
-  isWinningDouble = !true;
+  isWinningDouble = true;
 } else {
   console.log('Не выигрышный дубль.')
-  isWinningDouble = !true;
+  isWinningDouble = true;
 }
 }
 
