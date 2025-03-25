@@ -14,10 +14,10 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-let array1 = [1, 2, 3, 2, 1, 4]
-let arrUniq = [];
-function findUniqueElements(array, uniq) {
-    
+let array1 = [1, 2, 3, 2, 1, 4, 4, 3]
+
+function findUniqueElements(array) {
+    let uniq = [];
     for(let i = 0; i < array.length; i++) {
         let isUniq = true;
         for (let j = 0; j < uniq.length; j++) {
@@ -34,6 +34,6 @@ function findUniqueElements(array, uniq) {
     return uniq;
 }
 
-let x = findUniqueElements(array1, arrUniq);
+let x = findUniqueElements(array1);
 
 console.log(x);
