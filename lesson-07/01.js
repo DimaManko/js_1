@@ -32,4 +32,4 @@ function capitalizeWords(str) {
   return result;
 }
 
-console.log(capitalizeWords(str));
+console.log(capitalizeWords("hello world from javascript"));
