@@ -39,4 +39,3 @@ const doubledNumbers = map(numbers, (element, index) => {
   return element * 2
 })
 
-console.log(doubledNumbers)
