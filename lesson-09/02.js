@@ -44,7 +44,7 @@ startButton.addEventListener('click', () => {
       counter = "🚀"
       clearInterval(timerId)
     }
-  countdownDisplay.append(` -> ${counter}`);
+  countdownDisplay.textContent = counter;
 }, 1000)
   // your code
 })
