@@ -31,6 +31,7 @@ const countdownDisplay = document.getElementById('countdown')
 
 let isTimerStarted = false
 let timerId
+let counter = 0
 
 startButton.addEventListener('click', () => {
   let counter = 3
@@ -46,15 +47,24 @@ startButton.addEventListener('click', () => {
     }
   countdownDisplay.textContent = counter;
 }, 1000)
+isTimerStarted = true;
   // your code
 })
 
 cancelButton.addEventListener('click', () => {
   // your code
-    if (timerId) {
-      clearInterval(timerId)
-  countdownDisplay.textContent = "Отменено"
+   if(!isTimerStarted) { 
+    return;
+  } else {
+    stopCountdown()
+    countdownDisplay.textContent = 'Отменено'
+    
   }
 })
+
+function stopCountdown() {
+  clearInterval(timerId); // Очищаем интервал
+  isTimerStarted = false; // Таймер больше не активен
+}
 
 
